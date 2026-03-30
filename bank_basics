@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        String name = "Anitha";
+        int age = 25;
+        double initialDeposit = 10000.50;
+        char accountType = 'S';
+        boolean agreedToTerms = true;
+
+        System.out.println("Creating New Bank Account... ");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Initial Deposit: ₹" + initialDeposit);
+        System.out.println("Account Type: " + accountType);
+        System.out.println("Agreed to Terms: " + agreedToTerms);
+        if (initialDeposit > 10000.5) {
+            System.out.println("Minimum deposit verified");
+            System.out.println("Account successfully created");
+
+        } else {
+            System.out.println("Account not successfully created");
+        }
+    }
+}
