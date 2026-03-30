@@ -1,0 +1,29 @@
+class Atm {
+    private double balance = 8000;
+
+    public void withdraw(double amount) {
+        try {
+            if (amount > balance) {
+                throw new Exception("Insufficient Balance!");
+            }
+
+            balance = balance - amount;
+            System.out.println("Withdrawal successful. Remaining balance: " + balance);
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+
+        } finally {
+            System.out.println("Transaction complete.\n");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Atm atm = new Atm();
+
+        atm.withdraw(2000);   // valid withdrawal
+        atm.withdraw(9000);   // invalid withdrawal (error)
+    }
+}
