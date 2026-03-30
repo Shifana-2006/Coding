@@ -1,0 +1,16 @@
+public class Box{
+    public static void main(String[] args){
+        int runs=100;
+        Integer boxedruns=runs;
+        Integer autoboxedruns=runs;
+        int obj=5;
+        Integer myobj=obj;
+        Integer unboxobj=obj;
+        System.out.println("Primitive value:"+runs);
+        System.out.println("Manually Boxed value:"+boxedruns);
+        System.out.println("Auto-boxed value:"+autoboxedruns);
+        System.out.println("Wrapper object value:"+obj);
+        System.out.println("Manually unboxed value:"+myobj);
+        System.out.println("Auto-unboxed value:"+unboxobj);
+    }
+}
