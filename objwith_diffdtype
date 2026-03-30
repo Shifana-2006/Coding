@@ -1,0 +1,18 @@
+public class Person{
+    Person(int age){
+        System.out.println("Age is:"+age);
+    }
+    Person(String name){
+        System.out.println("Name is:"+name);
+    }
+    Person(String name,int age){
+        System.out.println("Another Person is "+name+" And age is "+age);
+    }
+    public static void main(String[] args){
+        Person obj1= new Person(20);
+        Person obj2 = new Person("Bob");
+        Person obj3 = new Person("Alice",18);
+
+
+    }
+}
