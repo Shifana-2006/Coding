@@ -1,0 +1,15 @@
+class AnnaUniversity {
+    class JJCET {
+        JJCET() {
+            System.out.println("It is Anna University");
+
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        AnnaUniversity c = new AnnaUniversity();//outer cls
+        AnnaUniversity.JJCET x= c.new JJCET();//creater obj for inner cls
+
+    }
+}
