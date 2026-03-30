@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int health=100;
+        int days=7;
+        boolean gameover=false;
+        System.out.println("Enter mosquito bites");
+        int mosquitobite=sc.nextInt();
+        System.out.println("Enter repellent");
+        int repellent=sc.nextInt();
+        System.out.println("Enter food");
+        int food=sc.nextInt();
+
+        while(true){
+            System.out.println("===Dengue Escape Survival Game===");
+            System.out.println("----MENU----");
+            System.out.println("1.Stay Indoors\n" );
+            System.out.println("2.Go Outside for Supplies\n");
+            System.out.println("3.Apply Repellent\n");
+            System.out.println("4.Rest\n");
+            System.out.println("5.Cook & Eat Food\n");
+            System.out.println("6.Help a Neighbour\n");
+
+            System.out.println("Enter choice: ");
+            int choice = sc.nextInt();
+            if(choice==1){
+                health-=15;
+
+            }
+
+        }
+
+
+
+    }
+}
