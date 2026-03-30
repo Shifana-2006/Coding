@@ -1,3 +1,4 @@
+//collect treasures like coins,rewards.A loop-based game where user actions change health and coins until they win or lose.
 import java.util.Scanner;
 public class game{
     public static void main(String[] args){
