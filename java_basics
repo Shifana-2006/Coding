@@ -1,0 +1,17 @@
+public class Main{
+    public static void main(String[] args) {
+        String name = "Meena";
+        int age = 21;
+        double CGPA = 8.5;
+        char grade = 'A';
+        boolean ishonest = true;
+        System.out.println("Farewell Letter...");
+        System.out.println("Dear" +name+ ", I'll miss you all.I am "+age+"years old with a CGPA of"+CGPA+"I scored Grade:"+grade+"in final year.I have 10000 memories from our time.it's true that I'll never forget you");
+        System.out.println("CGPA:" + CGPA);
+        System.out.println("Grade:" + grade);
+        System.out.println("Honesty:" + ishonest);
+        System.out.println("This is my Genuine letter");
+
+    }
+
+}
