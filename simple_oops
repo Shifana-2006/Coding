@@ -1,0 +1,14 @@
+public class Chocolate{              //Class
+    Chocolate() {
+        System.out.println("Sweet"); //I can also use without constructor
+    }//Constructor
+        void coco () {                    //Method
+            System.out.println("It is delicious");
+        }
+        public static void main (String[]args){
+            Chocolate c = new Chocolate();   //Object
+            c.coco();
+
+    }
+
+}
