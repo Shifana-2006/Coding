@@ -1,0 +1,34 @@
+public class Stringo {
+    public static void main(String[] args) {
+        String str = "Hello Java World";
+        String str2 = "HELLO JAVA WORLD";
+        String str3 = "Java";
+        System.out.println("Original String: " + str + " ");
+        System.out.println("Length: " + str.length());
+        System.out.println("Trimmed: " + str.trim());
+        System.out.println("Upper Case: " + str.toUpperCase());
+        System.out.println("Lower Case: " + str.toLowerCase());
+        System.out.println("Character at index 2: " + str.charAt(2));
+        System.out.println("Substring(2, 7): " + str.substring(2, 7));
+        System.out.println("Contains 'Java': " + str.contains("Java"));
+        System.out.println("Equals str2: " + str.trim().equals(str2));
+        System.out.println("EqualsIgnoreCase str2: " + str.trim().equalsIgnoreCase(str2));
+        System.out.println("Starts with '  He': " + str.startsWith("  He"));
+        System.out.println("Ends with 'ld  ': " + str.endsWith("ld  "));
+        System.out.println("Index of 'Java': " + str.indexOf("Java"));
+        System.out.println("Last index of 'o': " + str.lastIndexOf("o"));
+        System.out.println("Replace 'Java' with 'C++': " + str.replace("Java", "C++"));
+        System.out.println("ReplaceAll spaces with '-': " + str.replaceAll(" ", "-"));
+        String[] words = str.trim().split(" ");
+        System.out.println("Split words:");
+        for (String w : words) {
+            System.out.println(w);
+        }
+        String emptyStr = "";
+        String blankStr = "   ";
+        System.out.println("Is emptyStr empty? " + emptyStr.isEmpty());
+        System.out.println("Is blankStr blank? " + blankStr.isBlank());
+        System.out.println("Concatenate with str3: " + str3.concat(" Programming"));
+        System.out.println("Repeat str3 3 times: " + str3.repeat(3));
+    }
+}
