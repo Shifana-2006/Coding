@@ -1,0 +1,36 @@
+class ATM {
+    private double balance = 6999;
+
+    public void withdraw(double amount) {
+        try {
+            if (amount == 9999) {
+                int error = 5 / 0;
+            }
+            if (amount <= 0) {
+                throw new IllegalArgumentException("Invalid amount entered!");
+            }
+            if (amount > balance) {
+                throw new ArithmeticException("Insufficient Balance!");
+            }
+            balance -= amount;
+            System.out.println("Withdrawal successful. Remaining balance: " + balance);
+        }
+        catch (IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+        catch (Exception e) {
+            System.out.println("Unexpected Error: " + e.getMessage());
+        }
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        ATM atm = new ATM();
+        atm.withdraw(7000);
+        atm.withdraw(100);
+        atm.withdraw(9999);
+    }
+}
