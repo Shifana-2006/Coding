@@ -1,0 +1,9 @@
+public class Shadow {
+    String name = "Haya";
+
+    public static void main(String[] args) {
+        String name="Riya";
+        System.out.println(name);
+    }
+
+}
