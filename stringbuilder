@@ -1,0 +1,17 @@
+public class Main{ //class name is StringBuilder
+    public static void main(String[] args){
+        StringBuffer str = new StringBuffer("Hello");
+        str.append(" java");
+        System.out.println(str);
+        str.append(" World");
+        System.out.println(str);
+        str.insert(6 ," Fruit, "); //for insert and replace we can use 2 or 3 parameters also
+        System.out.println(str);
+        str.delete(6,10);
+        System.out.println(str);
+        str.replace(3,6,"c");
+        System.out.println(str);
+        str.reverse();
+        System.out.println(str);
+    }
+}
