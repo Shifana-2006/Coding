@@ -1,0 +1,56 @@
+import java.util.*;
+class Solution{
+ public static void main(String[] args){
+     Scanner sc=new Scanner(System.in);
+     System.out.println("Welcome to Secure Authentication System!!!");
+     System.out.println("1.Signup");
+     System.out.println("2.Login");
+     System.out.println("3.Exit");
+     System.out.println("Enter ur choice: ");
+     String savedUsername="";
+     String savedPassword="";
+     while(true){
+           int choice=sc.nextInt();
+     sc.nextLine();
+     
+     if(choice==1){
+         System.out.println("Signup");
+         System.out.print("Enter Username: ");
+         savedUsername=sc.nextLine();
+         System.out.print("Enter Password: ");
+         savedPassword=sc.nextLine();
+         System.out.println("Signup Successfully!,please Login.");
+         }
+            else  if(choice==2){
+         
+         System.out.println("Login");
+         System.out.print("Enter Username: ");
+         String username=sc.nextLine();
+         System.out.print("Enter Password: ");
+         String password=sc.nextLine();
+                 if(savedUsername.equals("")&&savedPassword.equals("")){
+                     System.out.println("Account doesn't exists,First Signup.");
+                 }
+                 else{
+                     
+                     if(savedUsername.equals(username)&&savedPassword.equals(password)){
+             System.out.println("Login Successfully! Welcome"+username);
+                     }
+             else{
+                 System.out.println("Login Failed!check Username & Password ");
+             }
+             
+                     }
+            }
+            else if(choice==3){
+                System.out.println("Thank You!!!");
+                break;
+            }
+                     else{
+                         System.out.println("Invalid Choice, Enter correct choice");
+                     }
+     }
+                     
+                 }
+             }
+         
